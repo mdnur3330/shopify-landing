@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       .btn {
         background-color: #6e5f50;
@@ -21,11 +21,8 @@
       .btn:hover {
         background-color: #A89784;
       }
-      .section{
-        padding: 64px 0;
-      }
-    
     </style>
+
   </head>
   <body class="max-w-7xl mx-auto font-sans bg-[#f6f5f3] text-[rgba(27,27,27,1)]">
     <section class="bg-[url('Image/banner.jpg')] bg-cover w-full h-screen">
@@ -84,20 +81,10 @@ Mongoliet
         <div></div>
       </div>
     </section>
-
     <!-- About Section -->
-    <section class="section px-4">
+    <section class="section px-4 py-12"  data-aos="fade-up" data-aos-duration="1000">
       <div class="flex flex-col md:flex-row gap-8">
-        <!-- Text old design-->
-        <!-- <div class="md:w-1/2 space-y-4">
-          <p class="text-[rgba(27, 27, 27, 1)] leading-relaxed text-2xl">
-            Undarmaa er en dansk webshop med rødder i Mongoliet. Når du vælger
-            vores kollektioner, vælger du klassisk design, naturlige materialer
-            og produkter, der kan bruges og elskes i mange år.
-          </p>
-          <button class="btn">Shop kollektionen</button>
-        </div> -->
-        <div class="md:w-1/2 flex items-center border">
+        <div class="md:w-1/2 flex items-center">
            <div class="space-y-3">
           <div class="flex items-center gap-2">
             <i class="fa-regular fa-circle-check"></i>
@@ -125,14 +112,14 @@ Mongoliet
     </section>
 
     <!-- Collection Section -->
-    <section class="py-12">
+    <section class="py-12" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="text-3xl ml-10 font-semibold text-[rgba(27, 27, 27, 1)] mb-8">
         Opdage vores ædle fibre
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
         <!-- Cashmere -->
-        <div class="relative group overflow-hidden">
+        <div class="relative group overflow-hidden" data-aos="zoom-in">
           <img
             src="Image/f3.png"
             alt="Cashmere"
@@ -148,7 +135,7 @@ Mongoliet
         </div>
 
         <!-- Yakuld -->
-        <div class="relative group overflow-hidden">
+        <div class="relative group overflow-hidden" data-aos="zoom-in">
           <img
             src="Image/f2.jpg"
             alt="Yakuld"
@@ -166,7 +153,7 @@ Mongoliet
         </div>
 
         <!-- Kameluld -->
-        <div class="relative group overflow-hidden">
+        <div class="relative group overflow-hidden" data-aos="zoom-in">
           <img
             src="Image/f1.jpg"
             alt="Kameluld"
@@ -184,7 +171,7 @@ Mongoliet
     </section>
 
     <!-- Design with a Noble Fiber -->
-    <section class="relative text-white">
+    <section class="relative text-white" data-aos="fade-up" data-aos-duration="1000">
       <!-- Background Image -->
       <img
         src="Image/bg-section.png"
@@ -344,7 +331,7 @@ Mongoliet
     </section>
 
 <!-- Lookbook Section -->
-    <section class="py-12">
+    <section class="py-12" data-aos="fade-in" data-aos-duration="1000">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-1">
         <div>
           <img src="Image/Img (1).png" class="w-full" alt="" />
@@ -392,7 +379,7 @@ Mongoliet
       </div>
     </section>
 
-    <section class="py-12 grid md:grid-cols-2 gap-10">
+    <section class="py-12 grid md:grid-cols-2 gap-10" data-aos="zoom-in" data-aos-duration="1000">
       <!-- Left: Image -->
       <div>
         <img
@@ -421,13 +408,13 @@ Mongoliet
 
     
 <!-- Textiles Section -->
-    <section class=" py-12 text-center">
+    <section class=" py-12 text-center"  data-aos="fade-up" data-aos-duration="1000">
       <!-- Title -->
       <h2 class="text-xl font-semibold">@undarmaa</h2>
       <p class="text-[rgba(83,83,83,1)] mb-8">Follow us on</p>
 
       <!-- Image Grid -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2" data-aos="zoom-in">
         <img
           src="Image/Img (3).png"
           alt="Gallery 1"
@@ -550,9 +537,12 @@ Mongoliet
         </div>
       </div>
     </footer>
+
+
+     <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
-
-
-
-<!-- npx @tailwindcss/cli -i ./tailwind/input.css -o ./assets/tailwind.css --watch -->
