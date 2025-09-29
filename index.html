@@ -88,15 +88,32 @@ Mongoliet
     <!-- About Section -->
     <section class="section px-4">
       <div class="flex flex-col md:flex-row gap-8">
-        <!-- Text -->
-        <div class="md:w-1/2 space-y-4">
+        <!-- Text old design-->
+        <!-- <div class="md:w-1/2 space-y-4">
           <p class="text-[rgba(27, 27, 27, 1)] leading-relaxed text-2xl">
             Undarmaa er en dansk webshop med rødder i Mongoliet. Når du vælger
             vores kollektioner, vælger du klassisk design, naturlige materialer
             og produkter, der kan bruges og elskes i mange år.
           </p>
           <button class="btn">Shop kollektionen</button>
+        </div> -->
+        <div class="md:w-1/2 flex items-center border">
+           <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-circle-check"></i>
+            <h3>Dansk webshop med rødder i Mongoliet</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-circle-check"></i>
+            <h3>Dansk webshop med rødder i Mongoliet</h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-circle-check"></i>
+            <h3>Dansk webshop med rødder i Mongoliet</h3>
+          </div>
         </div>
+        </div>
+       
         <!-- Image -->
         <div class="md:w-1/2">
           <img
@@ -181,12 +198,12 @@ Mongoliet
         class="relative px-5 md:px-20 py-16 grid grid-cols-1 md:grid-cols-2 gap-12"
       >
         <!-- Left Side -->
-        <div>
+        <div class="flex items-center">
           <h2 class="text-4xl mb-6">
             Tryg handel – dansk <br />
             webshop
           </h2>
-          <ul class="space-y-4 text-lg">
+          <!-- <ul class="space-y-4 text-lg">
             <li class="flex items-center gap-3">
               <i class="fa-solid fa-house"></i>
               Dansk kundeservice og showroom i Søborg
@@ -207,7 +224,7 @@ Mongoliet
               <i class="fa-regular fa-eye"></i>
               E-mærket webshop siden 2009
             </li>
-          </ul>
+          </ul> -->
         </div>
 
         <!-- Right Side -->
@@ -535,3 +552,7 @@ Mongoliet
     </footer>
   </body>
 </html>
+
+
+
+<!-- npx @tailwindcss/cli -i ./tailwind/input.css -o ./assets/tailwind.css --watch -->
