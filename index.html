@@ -24,22 +24,25 @@
     </style>
 
   </head>
-  <body class="max-w-7xl mx-auto font-sans bg-[#f6f5f3] text-[rgba(27,27,27,1)]">
-    <section class="bg-[url('Image/banner.jpg')] bg-cover w-full h-screen">
+  <body class="max-w-7xl mx-auto font-sans bg-[#f6f5f3] text-[rgba(27,27,27,1)]"> 
+    <!-- welcome section -->
+    <section class="bg-[url('Image/banner.jpg')] bg-cover w-full h-screen relative">
        <div class="">
-      <div class="bg-black flex justify-between text-white items-center p-5">
-      <div>
+      <div class="bg-black flex justify-between text-white items-center p-2 md:p-5">
+      <div class="text-[9px] md:text-base">
         <span>★★★★★ 4.9 ON TrustPilot</span>
       </div>
-      <div class="flex gap-2">
+      <div class="flex gap-2 text-[9px] md:text-base">
         <i class="fa-solid fa-truck-fast text-green-500"></i>
         <p>Free shipping over 799 dkk</p>
       </div>
-      <div>
+      <div class="text-[9px] md:text-base">
         <p>dark</p>
       </div>
     </div>
-    <nav class="flex justify-between pt-4 pb-2 px-10">
+
+    <!--PC Navbar area -->
+    <nav class="hidden md:flex justify-between pt-4 pb-2 px-10">
       <div>
         <ul class="flex gap-5">
           <li><a href="#" class="underline">SHOP</a></li>
@@ -60,27 +63,42 @@
         <i class="fa-solid fa-bag-shopping text-2xl"></i>
       </div>
     </nav>
-    </div>
 
-      <div class="w-full relative text-[rgba(2,21,44,1)]">
-        <!-- <img src="Image/Image (4).jpg" alt="" class="w-full" /> -->
-        <div class="bg-[rgba(254,254,254,0.75)] p-10 space-y-4 absolute top-80 left-28 w-[550px]">
-          <h1 class="text-5xl ">
+    <!--Mobile Navbar area -->
+    <nav class="flex justify-between pt-4 pb-2  px-4 md:px-10">
+      <div>
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </div>
+      <div>
+        <img src="Image/logo.png" alt="" />
+      </div>
+      <div class="space-x-3">
+        <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+        <i class="fa-regular fa-user text-2xl"></i>
+        <i class="fa-solid fa-bag-shopping text-2xl"></i>
+      </div>
+    </nav>
+    </div>
+ 
+     <!-- banner area -->
+        <div class="absolute top-28 md:top-48 md:left-20 bg-[rgba(254,254,254,0.75)] text-[rgba(2,21,44,1)] p-10 space-y-4  md:w-[550px]">
+          <h1 class="text-3xl md:text-5xl ">
             Naturlig luksus fra
-Mongoliet
+            Mongoliet
           </h1>
           <p>
             Mongoliets barske klima og 1000 år gamle nomadekultur har skabt den
             blødeste uld, der varmer din krop og forkæler din hud.
           </p>
-          <div class="mt-4">
-            <button class="btn text-white mr-5">Se Kollektionen</button>
-            <button class="px-4 py-2 border border-black rounded">Se Kollektionen</button>
+          <div class="mt-4 space-y-4">
+            <button class="btn w-full text-white mr-5">Se Kollektionen</button>
+            <button class="px-4 w-full py-2 border border-black rounded">Se Kollektionen</button>
           </div>
         </div>
-        <div></div>
-      </div>
+
     </section>
+
+
     <!-- About Section -->
     <section class="section px-4 py-12"  data-aos="fade-up" data-aos-duration="1000">
       <div class="flex flex-col md:flex-row gap-8">
@@ -331,8 +349,19 @@ Mongoliet
     </section>
 
 <!-- Lookbook Section -->
-    <section class="py-12" data-aos="fade-in" data-aos-duration="1000">
+    <section class="py-12 sm:px-4 md:px-0"  data-aos="fade-in" data-aos-duration="1000">
+       <div class="flex items-center justify-between md:mx-10">
+        <h2 class="text-3xl font-semibold text-[rgba(27, 27, 27, 1)] mb-8">
+        Udvalgte produkter
+      </h2>
+      <p class="underline">SHOP ALL</p>
+       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-1">
+        <div>
+          <img src="Image/Img.png" class="w-full" alt="" />
+          <h3>Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+        </div>
         <div>
           <img src="Image/Img (1).png" class="w-full" alt="" />
           <h3>Cashmere Plaid</h3>
@@ -344,7 +373,12 @@ Mongoliet
           <p>1.995 kr</p>
         </div>
         <div>
-          <img src="Image/Img (1).png" class="w-full" alt="" />
+          <img src="Image/Img (3).png" class="w-full" alt="" />
+          <h3>Cashmere Plaid</h3>
+          <p>1.995 kr</p>
+        </div>
+        <div>
+          <img src="Image/Img.png" class="w-full" alt="" />
           <h3>Cashmere Plaid</h3>
           <p>1.995 kr</p>
         </div>
@@ -354,28 +388,15 @@ Mongoliet
           <p>1.995 kr</p>
         </div>
         <div>
-          <img src="Image/Img (1).png" class="w-full" alt="" />
+          <img src="Image/Img (2).png" class="w-full" alt="" />
           <h3>Cashmere Plaid</h3>
           <p>1.995 kr</p>
         </div>
         <div>
-          <img src="Image/Img (1).png" class="w-full" alt="" />
+          <img src="Image/Img (3).png" class="w-full" alt="" />
           <h3>Cashmere Plaid</h3>
           <p>1.995 kr</p>
         </div>
-        <div>
-          <img src="Image/Img (1).png" class="w-full" alt="" />
-          <h3>Cashmere Plaid</h3>
-          <p>1.995 kr</p>
-        </div>
-        <div>
-          <img src="Image/Img (1).png" class="w-full" alt="" />
-          <h3>Cashmere Plaid</h3>
-          <p>1.995 kr</p>
-        </div>
-        
-
-
       </div>
     </section>
 
@@ -457,9 +478,6 @@ Mongoliet
         />
       </div>
     </section>
-
-
-
 
     <!-- Footer -->
     <footer class="border-t bg-white">
